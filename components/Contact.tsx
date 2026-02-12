@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
     const RESOLUTIONS = useMemo(() => [
     {
         id: 1,
-        year: "2025",
+        year: "2026",
         type: t.contact.cards.core.type,
         icon: Brain,
         title: t.contact.cards.core.title,
