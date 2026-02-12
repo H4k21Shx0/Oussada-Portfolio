@@ -1,0 +1,34 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #3b82f6;
+  --dark: #0f172a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-dark text-slate-200;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix for rechart tooltips and radar charts in dark mode */
+.recharts-polar-grid-concentric-path {
+  stroke: rgba(255, 255, 255, 0.1) !important;
+}
+.recharts-polar-angle-axis-line {
+  stroke: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Custom selection color */
+::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: #eff6ff;
+}
